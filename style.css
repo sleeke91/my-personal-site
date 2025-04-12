@@ -2,14 +2,30 @@ body {
     margin: 0;
 }
 
+/*PERSISTENT HEADER*/
 header {
     background-color: #8db785;
     color: #fee7c8;
-    height: 5em;
+    height: 7em;
     width: 100vw;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+}
+/*Persistent header's children - my name and inspo quote*/
+.main-header {
+    margin: 2rem; /*places text along the y-axis */
+    font-size: 4.5vw;
+    text-align: inherit;
 }
 
+.inspo-quote {
+    padding-top: 1em;
+    margin: auto;
+    text-align: right;
+    font-size: 1.75vw;
+}
+
+/*Side Navigational Bar*/
 .side-nav-list {
     height: 100%;
     width: 150px;
@@ -22,19 +38,27 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: bolder;
 }
 
 .nav-link {
-    padding-top: 1em;
+    text-align: center;
+    line-height: 3;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: #d35110;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+/*Pushes the main contents of the home page to be right up against the fixed nav sidebar*/
 .main-home {
     margin-left: 150px;
   }
-
-h1 {
-    margin: 2rem;
-}
 
 .home-text {
     width: 350px;
