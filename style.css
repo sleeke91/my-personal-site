@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-/*PERSISTENT HEADER*/
+/*PERSISTENT HEADER STYLING*/
 header {
     background-color: rgb(141, 183, 133);
     color: #fee7c8;
@@ -13,7 +13,7 @@ header {
 }
 /*Persistent header's children - my name and inspo quote*/
 .main-header {
-    margin: 2rem; /*places text along the y-axis */
+    margin: 3rem; /*places text along the y-axis */
     font-size: 3.5vw;
 }
 
@@ -47,14 +47,31 @@ a:hover {
     text-decoration: underline
 }
 
-/*HOME PAGE CONTENT*/
+/*PAGE CONTENT*/
 
-/*the main contents of the home page to be right up against the fixed nav sidebar*/
+/*main-home will remain a consistent class on all html pages to properly flex the layout.
+
+'main-home' will contain a child class for the content of each particular page
+    - home-content
+    - about-content
+    - portfolio-content
+    - contact-content
+
+Within each page's content child, will be a sub-child for it's text:
+    - home-text
+    - about-text
+    - portfolio-text
+    -contact-text
+*/
+
 .main-home {
     display: flex;
     flex-direction: row;
   }
 
+/*HOME PAGE STYLING*/
+
+/* adjusts styling for my headshot */
 .bio-pic {
     width: 30vw;
 }
@@ -64,7 +81,7 @@ a:hover {
     text-align: justify;
 }
 
-/*PERSISTENT FOOTER*/
+/*PERSISTENT FOOTER STYLING*/
 
 footer {
     padding-top: 20px;
