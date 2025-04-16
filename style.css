@@ -4,9 +4,9 @@ body {
 
 /*PERSISTENT HEADER*/
 header {
-    background-color: #8db785;
+    background-color: rgb(141, 183, 133);
     color: #fee7c8;
-    height: 7em;
+    height: 8.5em;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -14,8 +14,7 @@ header {
 /*Persistent header's children - my name and inspo quote*/
 .main-header {
     margin: 2rem; /*places text along the y-axis */
-    font-size: 4.5vw;
-    text-align: inherit;
+    font-size: 3.5vw;
 }
 
 .inspo-quote {
@@ -27,7 +26,7 @@ header {
 
 /*Side Navigational Bar*/
 .side-nav-list {
-    height: 100%;
+    height: 80%;
     width: 150px;
     position: fixed;
     z-index: 1;
@@ -48,19 +47,84 @@ header {
 
 a:link, a:visited {
     text-decoration: none;
-    color: #d35110;
+    color: #d66d50;
 }
 
 a:hover {
     text-decoration: underline
 }
 
-/*Pushes the main contents of the home page to be right up against the fixed nav sidebar*/
+/*HOME PAGE CONTENT*/
+
+/*the main contents of the home page to be right up against the fixed nav sidebar*/
 .main-home {
     margin-left: 150px;
   }
 
+.bio-pic {
+    width: 30vw;
+}
+
 .home-text {
-    width: 350px;
+    width: 30vw;
     text-align: justify;
+}
+
+/*PERSISTENT FOOTER*/
+
+footer {
+    height: 8.5em;
+    z-index: 99;
+}
+
+.linkedin-icon {
+    width: 50px;
+    justify-content: center;
+}
+
+/*STYLING FOR NAV BAR AND MAIN CONTENTS IF SCREEN IS SMALLER THAN 650PX */
+@media screen and (max-width: 650px) {
+    .side-nav-list {
+        background-color: #fee7c8;
+        display: flex;
+        position: relative;
+        padding-top: 0;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: bolder;
+    }
+    
+    .nav-link {
+        text-align: center;
+
+    }
+    
+    a:link, a:visited {
+        text-decoration: none;
+        color: #d35110;
+    }
+    
+    a:hover {
+        text-decoration: underline
+    }
+
+    .main-home {
+        margin: 0;
+        text-align: center;
+    }
+
+    .bio-pic {
+        width: 70vw;
+    }
+
+    .home-text {
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+/*ABOUT PAGE STYLING*/
+.main-about {
+    margin-left: 150px;
 }
