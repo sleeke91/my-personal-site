@@ -26,14 +26,7 @@ header {
 
 /*Side Navigational Bar*/
 .side-nav-list {
-    height: 80%;
     width: 150px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    background-color: #fee7c8;
-    overflow-x: hidden;
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +51,8 @@ a:hover {
 
 /*the main contents of the home page to be right up against the fixed nav sidebar*/
 .main-home {
-    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
   }
 
 .bio-pic {
@@ -73,12 +67,14 @@ a:hover {
 /*PERSISTENT FOOTER*/
 
 footer {
-    height: 8.5em;
-    z-index: 99;
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
 }
 
 .linkedin-icon {
-    width: 50px;
+    font-size: 50px;
+    display: flex;
     justify-content: center;
 }
 
@@ -87,7 +83,6 @@ footer {
     .side-nav-list {
         background-color: #fee7c8;
         display: flex;
-        position: relative;
         padding-top: 0;
         width: 100vw;
         flex-direction: row;
@@ -111,6 +106,8 @@ footer {
 
     .main-home {
         margin: 0;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
