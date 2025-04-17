@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+}
+
+/*PERSISTENT HEADER STYLING*/
+header {
+    background-color: rgb(141, 183, 133);
+    color: #fee7c8;
+    height: 8.5em;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+/*Persistent header's children - my name and inspo quote*/
+.main-header {
+    margin: 3rem; /*places text along the y-axis */
+    font-size: 3.5vw;
+}
+
+.inspo-quote {
+    padding-top: 1em;
+    margin: auto;
+    text-align: right;
+    font-size: 1.75vw;
+}
+
+/*Side Navigational Bar*/
+.side-nav-list {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.nav-link {
+    text-align: center;
+    line-height: 3;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #d66d50;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+/*PAGE CONTENT*/
+
+/*main-home will remain a consistent class on all html pages to properly flex the layout.
+
+'main-home' will contain a child class for the content of each particular page
+    - home-content
+    - about-content
+    - portfolio-content
+    - contact-content
+
+Within each page's content child, will be a sub-child for it's text:
+    - home-text
+    - about-text
+    - portfolio-text
+    - contact-text
+*/
+
+.main-home, .main-about, .main-portfolio, .main-contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+/*HOME PAGE STYLING*/
+
+/* adjusts styling for my headshot */
+.bio-pic {
+    width: 30vw;
+}
+
+.home-text {
+    width: 30vw;
+    text-align: justify;
+}
+
+/*PERSISTENT FOOTER STYLING*/
+
+footer {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.linkedin-icon {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/*STYLING FOR NAV BAR AND MAIN CONTENTS IF SCREEN IS SMALLER THAN 650PX */
+@media screen and (max-width: 650px) {
+    .side-nav-list {
+        background-color: #fee7c8;
+        display: flex;
+        padding-top: 0;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: bolder;
+    }
+    
+    .nav-link {
+        text-align: center;
+
+    }
+    
+    a:link, a:visited {
+        text-decoration: none;
+        color: #d35110;
+    }
+    
+    a:hover {
+        text-decoration: underline
+    }
+
+    .main-home, .main-about, .main-portfolio, .main-contact {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio-pic {
+        width: 70vw;
+    }
+
+    .home-text, .about-text, .portfolio-text {
+        width: 70vw;
+        margin: auto;
+    }
+
+    form {
+        margin: auto;
+
+    }
+}
+
+/*ABOUT PAGE STYLING*/
+
+/*CONTACT FORM STYLING*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #8db785;
+    color:#fee7c8;
+    font-weight: bold;
+}
+
+input {
+    background-color: #fee7c8;
+    margin-top: 7px;
+    border: 0;
+    font-size: 1em;
+    font-family: "Montserrat";
+}
+
+textarea {
+    background-color: #fee7c8;
+    border: 1px solid;
+    border-color: #8db785;
+    margin-top: 7px;
+    font-size: 1em;
+    height: 100px;
+    resize: none;
+    font-family: "Montserrat"
+}
+
+.submit-button {
+    width: 50%;
+    height: 2rem;
+    font-weight: bold;
+    color: #d66d50;
+}
