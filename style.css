@@ -49,20 +49,7 @@ a:hover {
 
 /*PAGE CONTENT*/
 
-/*main-home will remain a consistent class on all html pages to properly flex the layout.
-
-'main-home' will contain a child class for the content of each particular page
-    - home-content
-    - about-content
-    - portfolio-content
-    - contact-content
-
-Within each page's content child, will be a sub-child for it's text:
-    - home-text
-    - about-text
-    - portfolio-text
-    - contact-text
-*/
+/*Page content will be consistently structred to be flexed and centered.*/
 
 .main-home, .main-about, .main-portfolio {
     display: flex;
@@ -95,7 +82,89 @@ Within each page's content child, will be a sub-child for it's text:
 
 /*ABOUT PAGE STYLING*/
 
+.hobby {
+    margin: 20px;
+}
 
+#photography {
+    background-image: url("/block10/my-personal-site/images/cameras.JPG");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#photography:hover {
+    background-image: url("/block10/my-personal-site/images/cameras.JPG");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#baking {
+    background-image: url("/block10/my-personal-site/images/baking.JPG");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#baking:hover {
+    background-image: url("/block10/my-personal-site/images/baking.JPG");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#nature {
+    background-image: url("/block10/my-personal-site/images/labagh.jpg");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#nature:hover {
+    background-image: url("/block10/my-personal-site/images/labagh.jpg");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+.hobby-text {
+    color: #fee7c8;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: #a0806a58;
+    
+}
+
+.hobby-title {
+    color: #fee7c8;
+    margin: 0;
+    padding: 11px;
+    text-shadow: 0px 0px 5px #996d4fb5;
+    
+}
 
 /*CONTACT FORM STYLING*/
 
