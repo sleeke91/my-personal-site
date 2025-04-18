@@ -64,11 +64,21 @@ Within each page's content child, will be a sub-child for it's text:
     - contact-text
 */
 
-.main-home, .main-about, .main-portfolio, .main-contact {
+.main-home, .main-about, .main-portfolio {
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
 
+.main-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-content, .about-content, .portfolio-content, .home-content {
+    flex-grow: .85;
+} 
+  
 /*HOME PAGE STYLING*/
 
 /* adjusts styling for my headshot */
@@ -79,6 +89,7 @@ Within each page's content child, will be a sub-child for it's text:
 .home-text {
     width: 30vw;
     text-align: justify;
+    margin: auto;
 }
 
 /*PERSISTENT FOOTER STYLING*/
@@ -175,11 +186,16 @@ textarea {
     font-size: 1em;
     height: 100px;
     resize: none;
-    font-family: "Montserrat"
+    font-family: "Montserrat";
+}
+
+#placeholder {
+    text-align: center;
 }
 
 .submit-button {
     width: 50%;
+    margin: auto;
     height: 2rem;
     font-weight: bold;
     color: #d66d50;
