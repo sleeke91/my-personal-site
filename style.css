@@ -81,7 +81,7 @@ Within each page's content child, will be a sub-child for it's text:
   
 /*HOME PAGE STYLING*/
 
-/* adjusts styling for my headshot */
+/* adjusts styling for headshot */
 .bio-pic {
     width: 30vw;
     padding-top: 20px;
@@ -91,6 +91,58 @@ Within each page's content child, will be a sub-child for it's text:
     width: 30vw;
     text-align: justify;
     margin: auto;
+}
+
+/*ABOUT PAGE STYLING*/
+
+
+
+/*CONTACT FORM STYLING*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #8db785;
+    color:#fee7c8;
+    font-weight: bold;
+}
+
+input {
+    background-color: #fee7c8;
+    height: 25px;
+    margin-top: 7px;
+    border: 0;
+    font-size: 1em;
+    font-family: "Montserrat";
+}
+
+textarea {
+    background-color: #fee7c8;
+    border: 1px solid;
+    border-color: #8db785;
+    margin-top: 7px;
+    font-size: 1em;
+    height: 100px;
+    resize: none;
+    font-family: "Montserrat";
+}
+
+/* Centers the placeholder text in the message field*/
+#placeholder {
+    text-align: center;
+}
+
+.submit-button {
+    width: 50%;
+    margin: auto;
+    height: 2rem;
+    font-weight: bold;
+    color: #d66d50;
 }
 
 /*PERSISTENT FOOTER STYLING*/
@@ -107,7 +159,7 @@ footer {
     justify-content: center;
 }
 
-/*STYLING FOR NAV BAR AND MAIN CONTENTS IF SCREEN IS SMALLER THAN 650PX */
+/*STYLING IF SCREEN IS SMALLER THAN 650PX */
 @media screen and (max-width: 650px) {
     .side-nav-list {
         background-color: #fee7c8;
@@ -152,53 +204,4 @@ footer {
         margin: auto;
 
     }
-}
-
-/*ABOUT PAGE STYLING*/
-
-/*CONTACT FORM STYLING*/
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #8db785;
-    color:#fee7c8;
-    font-weight: bold;
-}
-
-input {
-    background-color: #fee7c8;
-    height: 25px;
-    margin-top: 7px;
-    border: 0;
-    font-size: 1em;
-    font-family: "Montserrat";
-}
-
-textarea {
-    background-color: #fee7c8;
-    border: 1px solid;
-    border-color: #8db785;
-    margin-top: 7px;
-    font-size: 1em;
-    height: 100px;
-    resize: none;
-    font-family: "Montserrat";
-}
-
-#placeholder {
-    text-align: center;
-}
-
-.submit-button {
-    width: 50%;
-    margin: auto;
-    height: 2rem;
-    font-weight: bold;
-    color: #d66d50;
 }
