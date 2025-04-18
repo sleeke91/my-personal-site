@@ -4,7 +4,7 @@ body {
 
 /*PERSISTENT HEADER STYLING*/
 header {
-    background-color: rgb(141, 183, 133);
+    background-color: #8db785;
     color: #fee7c8;
     height: 8.5em;
     width: 100vw;
@@ -49,36 +49,169 @@ a:hover {
 
 /*PAGE CONTENT*/
 
-/*main-home will remain a consistent class on all html pages to properly flex the layout.
+/*Page content will be consistently structred to be flexed and centered.*/
 
-'main-home' will contain a child class for the content of each particular page
-    - home-content
-    - about-content
-    - portfolio-content
-    - contact-content
-
-Within each page's content child, will be a sub-child for it's text:
-    - home-text
-    - about-text
-    - portfolio-text
-    - contact-text
-*/
-
-.main-home, .main-about, .main-portfolio, .main-contact {
+.main-home, .main-about, .main-portfolio {
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
 
+.main-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-content, .about-content, .portfolio-content, .home-content {
+    flex-grow: .85;
+} 
+  
 /*HOME PAGE STYLING*/
 
-/* adjusts styling for my headshot */
+/* adjusts styling for headshot */
 .bio-pic {
     width: 30vw;
+    padding-top: 20px;
 }
 
 .home-text {
     width: 30vw;
     text-align: justify;
+    margin: auto;
+}
+
+/*ABOUT PAGE STYLING*/
+
+.hobby {
+    margin: 20px;
+}
+
+#photography {
+    background-image: url("/block10/my-personal-site/images/cameras.JPG");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#photography:hover {
+    background-image: url("/block10/my-personal-site/images/cameras.JPG");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#baking {
+    background-image: url("/block10/my-personal-site/images/baking.JPG");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#baking:hover {
+    background-image: url("/block10/my-personal-site/images/baking.JPG");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#nature {
+    background-image: url("/block10/my-personal-site/images/labagh.jpg");
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#nature:hover {
+    background-image: url("/block10/my-personal-site/images/labagh.jpg");
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+.hobby-text {
+    color: #fee7c8;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: #a0806a58;
+    
+}
+
+.hobby-title {
+    color: #fee7c8;
+    margin: 0;
+    padding: 11px;
+    text-shadow: 0px 0px 5px #996d4fb5;
+    
+}
+
+/*CONTACT FORM STYLING*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #8db785;
+    color:#fee7c8;
+    font-weight: bold;
+}
+
+input {
+    background-color: #fee7c8;
+    height: 25px;
+    margin-top: 7px;
+    border: 0;
+    font-size: 1em;
+    font-family: "Montserrat";
+}
+
+textarea {
+    background-color: #fee7c8;
+    border: 1px solid;
+    border-color: #8db785;
+    margin-top: 7px;
+    font-size: 1em;
+    height: 100px;
+    resize: none;
+    font-family: "Montserrat";
+}
+
+/* Centers the placeholder text in the message field*/
+#placeholder {
+    text-align: center;
+}
+
+.submit-button {
+    width: 50%;
+    margin: auto;
+    height: 2rem;
+    font-weight: bold;
+    color: #d66d50;
 }
 
 /*PERSISTENT FOOTER STYLING*/
@@ -95,7 +228,7 @@ footer {
     justify-content: center;
 }
 
-/*STYLING FOR NAV BAR AND MAIN CONTENTS IF SCREEN IS SMALLER THAN 650PX */
+/*STYLING IF SCREEN IS SMALLER THAN 650PX */
 @media screen and (max-width: 650px) {
     .side-nav-list {
         background-color: #fee7c8;
@@ -140,47 +273,4 @@ footer {
         margin: auto;
 
     }
-}
-
-/*ABOUT PAGE STYLING*/
-
-/*CONTACT FORM STYLING*/
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #8db785;
-    color:#fee7c8;
-    font-weight: bold;
-}
-
-input {
-    background-color: #fee7c8;
-    margin-top: 7px;
-    border: 0;
-    font-size: 1em;
-    font-family: "Montserrat";
-}
-
-textarea {
-    background-color: #fee7c8;
-    border: 1px solid;
-    border-color: #8db785;
-    margin-top: 7px;
-    font-size: 1em;
-    height: 100px;
-    resize: none;
-    font-family: "Montserrat"
-}
-
-.submit-button {
-    width: 50%;
-    height: 2rem;
-    font-weight: bold;
-    color: #d66d50;
 }
