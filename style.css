@@ -166,6 +166,114 @@ a:hover {
     
 }
 
+/*PORTFOLIO STYLING*/
+
+.project {
+    margin: 20px;
+}
+
+#the-bakery {
+    background-color: #d3471056;
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#the-bakery:hover {
+    background-color: #d3471056;
+    width: 600px;
+    height: 230px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#the-grocery-list {
+    background-color: #a5c76a67;
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#the-grocery-list:hover {
+    background-color: #a5c76a67;
+    width: 600px;
+    height: 190px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+#the-zoo {
+    background-color: #e783a956;
+    overflow: hidden;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+#the-zoo:hover {
+    background-color: #e783a956;
+    width: 600px;
+    height: 175px;
+    text-align: center;
+    object-fit: cover;
+    transition: all 1s ease-out;
+}
+
+.project-title {
+    color: #fee7c8;
+    margin: 0;
+    padding: 11px;
+    text-shadow: 0px 0px 5px #996d4fb5; 
+}
+
+/*For each project, I gave a distinct styling for each to compliment the different colorschemes*/
+
+.bakery-text {
+    color: #fee7c8;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: #c4484858;  
+}
+
+.grocery-text {
+    color: #fee7c8;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: #578b4c47;  
+}
+
+.zoo-text {
+    color: #fee7c8;
+    font-weight: 400;
+    text-align: center;
+    text-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: #ad397158;  
+}
+
 /*CONTACT FORM STYLING*/
 
 form {
