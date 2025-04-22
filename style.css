@@ -6,19 +6,22 @@ body {
 header {
     background-color: #8db785;
     color: #fee7c8;
-    height: 8.5em;
+    height: 6em;
     width: 100vw;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 /*Persistent header's children - my name and inspo quote*/
 .main-header {
-    margin: 3rem; /*places text along the y-axis */
+    padding-left: 5vh;
+    min-width: 50%;
+    text-wrap: wrap;
     font-size: 3.5vw;
 }
 
 .inspo-quote {
-    padding-top: 1em;
+    padding: 1em;
     margin: auto;
     text-align: right;
     font-size: 1.75vw;
@@ -186,7 +189,7 @@ a:hover {
 #the-bakery:hover {
     background-color: #d3471056;
     width: 600px;
-    height: 230px;
+    height: 270px;
     text-align: center;
     object-fit: cover;
     transition: all 1s ease-out;
@@ -206,7 +209,7 @@ a:hover {
 #the-grocery-list:hover {
     background-color: #a5c76a67;
     width: 600px;
-    height: 190px;
+    height: 225px;
     text-align: center;
     object-fit: cover;
     transition: all 1s ease-out;
@@ -226,7 +229,7 @@ a:hover {
 #the-zoo:hover {
     background-color: #e783a956;
     width: 600px;
-    height: 175px;
+    height: 210px;
     text-align: center;
     object-fit: cover;
     transition: all 1s ease-out;
@@ -239,7 +242,7 @@ a:hover {
     text-shadow: 0px 0px 5px #996d4fb5; 
 }
 
-/*For each project, I gave a distinct styling for each to compliment the different colorschemes*/
+/*I gave a distinct styling and colorscheme for each project*/
 
 .bakery-text {
     color: #fee7c8;
@@ -273,6 +276,7 @@ a:hover {
     padding: 15px;
     background: #ad397158;  
 }
+
 
 /*CONTACT FORM STYLING*/
 
@@ -336,8 +340,37 @@ footer {
     justify-content: center;
 }
 
-/*STYLING IF SCREEN IS SMALLER THAN 650PX */
-@media screen and (max-width: 650px) {
+/*STYLING IF SCREEN IS SMALLER THAN 800PX */
+@media screen and (max-width: 800px) {
+
+/*PERSISTENT HEADER STYLING*/
+    header {
+        background-color: #8db785;
+        color: #fee7c8;
+        height: 7em;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Persistent header's children - my name and inspo quote*/
+    .main-header {
+        padding-left: 0;
+        padding-top: 20px;
+        font-size: 35px;
+        text-wrap: wrap;
+        text-align: center;
+        margin: auto;
+    } 
+
+    .inspo-quote {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        width: 90%;
+    }
+
     .side-nav-list {
         background-color: #fee7c8;
         display: flex;
@@ -380,5 +413,149 @@ footer {
     form {
         margin: auto;
 
+    }
+
+    /*ABOUT PAGE STYLING*/
+
+    .hobby {
+        margin: 10px;
+    }
+
+    #photography {
+        background-image: url("/block10/my-personal-site/images/cameras.JPG");
+        overflow: hidden;
+        width: 75%;
+        min-width: 275px;
+        height: 60px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #photography:hover {
+        background-image: url("/block10/my-personal-site/images/cameras.JPG");
+        width: 75%;
+        height: 200px;
+        min-width: 275px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
+    }
+
+    #baking {
+        background-image: url("/block10/my-personal-site/images/baking.JPG");
+        overflow: hidden;
+        width: 75%;
+        height: 60px;
+        min-width: 275px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #baking:hover {
+        background-image: url("/block10/my-personal-site/images/baking.JPG");
+        width: 75%;
+        height: 200px;
+        min-width: 275px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
+    }
+
+    #nature {
+        background-image: url("/block10/my-personal-site/images/labagh.jpg");
+        overflow: hidden;
+        width: 75%;
+        height: 60px;
+        min-width: 275px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #nature:hover {
+        background-image: url("/block10/my-personal-site/images/labagh.jpg");
+        width: 75%;
+        height: 200px;
+        min-width: 275px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
+    }
+
+    /*PORTFOLIO STYLING*/
+
+    .project {
+        margin: 10px;
+    }
+
+    #the-bakery {
+        background-color: #d3471056;
+        overflow: hidden;
+        width: 75%;
+        min-width: 275px;
+        height: 60px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #the-bakery:hover {
+        background-color: #d3471056;
+        width: 75%;
+        min-width: 275px;
+        height: 420px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
+    }
+
+    #the-grocery-list {
+        background-color: #a5c76a67;
+        overflow: hidden;
+        width: 75%;
+        min-width: 275px;
+        height: 60px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #the-grocery-list:hover {
+        background-color: #a5c76a67;
+        width: 75%;
+        min-width: 275px;
+        height: 320px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
+    }
+
+    #the-zoo {
+        background-color: #e783a956;
+        overflow: hidden;
+        width: 75%;
+        min-width: 275px;
+        height: 60px;
+        border-radius: 20px;
+        object-fit: cover;
+        text-align: center;
+        margin: auto;
+    }
+
+    #the-zoo:hover {
+        background-color: #e783a956;
+        width: 75%;
+        min-width: 275px;
+        height: 285px;
+        text-align: center;
+        object-fit: cover;
+        transition: all 1s ease-out;
     }
 }
